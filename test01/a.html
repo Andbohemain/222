@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <frameset>
-        
-    </frameset>
+
+<body bgcolor="gree">
+    <h1 align="center">注册表单</h1>
+    <form action="su">
+        <table border="0" align="center">
+          
+            <tr>
+                <td align=right>登录名称</td>
+                <td><input type="text" name="Uname"></td>
+            </tr>
+            <tr>
+                <td align=right>登录密码</td>
+                <td><input type="password" name="Upassword"></td>
+            </tr>
+            <tr>
+                <td align=right>密码确认</td>
+                <td><input type="password" name="UpasswordAgain"></td>
+            </tr>
+            <tr>
+                <td align=right>密码保护问题</td>
+                <td><select name="question" style="width:100%">
+                        <option value="pet">您宠物的名字？</option>
+                        <option value="father">您父亲的名字？</option>
+                        <option value="Sisiter">您姐姐的名字？</option>
+                        <option value="brother">您哥哥的名字？</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td align=right>问题答案</td>
+                <td bgcolor="red"><input type="text" name="answer"></td>
+            </tr>
+            <tr>
+                <td align=right>性别</td>
+                <td><input type="radio" name="sex" value="male">男
+                    <input type="radio" name="sex" value="female">女</td>
+            </tr>
+            <tr>
+                <td align="center" colspan=2><input type="submit"><input type="reset"></td>
+            </tr>
+        </table>
+    </form>
 </body>
+
 </html>
